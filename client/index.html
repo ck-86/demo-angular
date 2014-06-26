@@ -8,12 +8,9 @@
 </head>
 <body>
 
-	<div ng-controller="ParentController">
-		<div ng-controller="ChildController">
-			<a href="#" ng-click="sayHello()">say hello [CLICK HERE]</a>
-		</div>
-		{{person}}
-	</div>
-
-</body>
+  <div ng-controller="MyController">
+    <input ng-model="expr" type="text" placeholder="Enter an expression" />
+    <div>{{ parsedExpr }}</div>
+  </div>
+  </body>
 </html>
