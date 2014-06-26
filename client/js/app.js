@@ -1,18 +1,5 @@
-function MyController($scope){
+var app = angular.module('myApp',[]);
 
-	// Created `clock` object with `now` property
-	$scope.clock = {
-		now : new Date()
-	}; 
-
-	// Update `clock.now` to current time
-	var updateClock = function() {
-		$scope.clock.now = new Date();
-	};
-
-	setInterval( function(){
-		$scope.$apply(updateClock);
-	}, 1000);
-
-	updateClock();
-}
+app.controller('FirstController' , function($scope){
+	$scope.message = "Hello Angular"
+});
