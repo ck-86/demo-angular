@@ -9,8 +9,11 @@
 <body>
 
   <div ng-controller="MyController">
-    <input ng-model="expr" type="text" placeholder="Enter an expression" />
-    <div>{{ parsedExpr }}</div>
+    <input ng-model="to" type="text" placeholder="Enter an expression" />
+    <textarea ng-model="emailBody"></textarea>
+    <div>To : __to__ </div>
+    <div>Body : __emailBody__ </div>
+    <div>Preview : __previewText__ </div>
   </div>
   </body>
 </html>
