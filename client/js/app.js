@@ -7,4 +7,15 @@ App.controller('MyController', ['$scope', '$filter' , function($scope, $filter){
 
   $scope.today = new Date();
   
-}])
+}]);
+
+
+App.filter('capitalize', function() {
+  return function(input) {
+
+    if(input) {
+      return input[0].toUpperCase() + input.slice(1);
+    }
+    
+  }
+});

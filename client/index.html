@@ -10,8 +10,10 @@
 
   <div ng-controller="MyController">
     <input ng-model="name" type="text" placeholder="Enter Your Name" />
-    <p> {{ name }} </p>
-    <p> {{ today | date : 'a' }} </p>
+    <p> {{ name | lowercase | capitalize }} </p>
+    <p> 
+
+    </p>
   </div>
   </body>
 </html>
